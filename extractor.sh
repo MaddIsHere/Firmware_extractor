@@ -52,7 +52,7 @@ payload() {
 
     # Extract content to our directory
     echo "[INFO] Extracting 'payload.bin' partitions..."
-    ${otadump} --output-dir "${tmpdir}" "${romzip}" 2>/dev/null ||
+    ${otadump} --output-dir "${tmpdir}" "${romzip}" ||
         echo "[ERROR] Failed extracting partitions."
 }
 
